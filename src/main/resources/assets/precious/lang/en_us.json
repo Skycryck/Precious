@@ -1,4 +1,9 @@
 {
   "item.precious.the_one": "The One",
-  "creativetab.precious": "Precious"
+  "item.precious.mithril": "Mithril",
+  "item.precious.raw_mithril": "Raw Mithril",
+  "creativetab.precious": "Precious Mod",
+  "block.precious.mithril_block": "Block of Mithril",
+  "block.precious.mithril_ore": "Mithril Ore",
+  "block.precious.deepslate_mithril_ore": "Deepslate Mithril Ore"
 }

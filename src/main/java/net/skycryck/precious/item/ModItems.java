@@ -15,7 +15,11 @@ public class ModItems {
     public static final RegistryObject<Item> THE_ONE = ITEMS.register("the_one",
             () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
 
+    public static final RegistryObject<Item> MITHRIL = ITEMS.register("mithril",
+            () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
