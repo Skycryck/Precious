@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "precious:mithril_block",
+    "precious:mithril_ore",
+    "precious:deepslate_mithril_ore"
+  ]
+}
