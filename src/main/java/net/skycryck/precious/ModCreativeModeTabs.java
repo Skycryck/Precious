@@ -7,7 +7,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.block.ModBlocks;
 import net.skycryck.precious.item.ModItems;
 
@@ -21,8 +20,8 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.precious"))
                     .displayItems((displayParameters, output) -> {
                         output.accept(ModItems.THE_ONE.get());
-                        output.accept(ModItems.MITHRIL.get());
                         output.accept(ModItems.RAW_MITHRIL.get());
+                        output.accept(ModItems.MITHRIL_INGOT.get());
                         output.accept(ModBlocks.MITHRIL_BLOCK.get());
                         output.accept(ModBlocks.MITHRIL_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
