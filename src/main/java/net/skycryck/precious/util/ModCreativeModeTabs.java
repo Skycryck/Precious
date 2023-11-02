@@ -1,4 +1,4 @@
-package net.skycryck.precious;
+package net.skycryck.precious.util;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.block.ModBlocks;
 import net.skycryck.precious.item.ModItems;
 
