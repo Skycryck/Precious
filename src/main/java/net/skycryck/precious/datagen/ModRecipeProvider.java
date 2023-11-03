@@ -61,6 +61,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 "precious:mithril_ingot", "mithril",
                 "precious:mithril_block", "mithril");
 
+        nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.RAW_MITHRIL.get(), RecipeCategory.MISC, ModBlocks.RAW_MITHRIL_BLOCK.get(),
+                "precious:raw_mithril", "mithril",
+                "precious:raw_mithril_block", "mithril");
+
         //Build a smelting recipe for Raw Mithril
         oreSmelting(pWriter, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.5f, 300, "mithril");
 

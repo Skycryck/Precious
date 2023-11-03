@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 0.5,
+  "group": "mithril",
+  "ingredient": {
+    "item": "precious:deepslate_mithril_ore"
+  },
+  "result": "precious:mithril_ingot"
+}

@@ -20,6 +20,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         //When a Mithril Block is destroyed, a Mithril Block is dropped.
         this.dropSelf(ModBlocks.MITHRIL_BLOCK.get());
 
+        this.dropSelf(ModBlocks.RAW_MITHRIL_BLOCK.get());
+
         //When a Mithril Ore is destroyed, some Raw Mithril are dropped.
         this.add(ModBlocks.MITHRIL_ORE.get(),
                 block -> createOreDrop(ModBlocks.MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));

@@ -24,6 +24,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> MITHRIL_BLOCK = registerBlock("mithril_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
+    //Raw Mithril Block
+    public static final RegistryObject<Block> RAW_MITHRIL_BLOCK = registerBlock("raw_mithril_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+
     //Mithril Stairs
     public static final RegistryObject<Block> MITHRIL_STAIRS = registerBlock("mithril_stairs",
             () -> new StairBlock(() -> ModBlocks.MITHRIL_BLOCK.get().defaultBlockState(),

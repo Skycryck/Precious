@@ -28,6 +28,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.MITHRIL_BLOCK.get(),
                         ModBlocks.MITHRIL_ORE.get(),
                         ModBlocks.DEEPSLATE_MITHRIL_ORE.get(),
+                        ModBlocks.RAW_MITHRIL_BLOCK.get(),
                         ModBlocks.MITHRIL_STAIRS.get(),
                         ModBlocks.MITHRIL_SLAB.get());
 
@@ -35,6 +36,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.MITHRIL_BLOCK.get(),
                         ModBlocks.MITHRIL_ORE.get(),
                         ModBlocks.DEEPSLATE_MITHRIL_ORE.get(),
+                        ModBlocks.RAW_MITHRIL_BLOCK.get(),
                         ModBlocks.MITHRIL_STAIRS.get(),
                         ModBlocks.MITHRIL_SLAB.get());
     }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "precious:block/mithril_slab"
+    },
+    "type=double": {
+      "model": "precious:block/mithril_block"
+    },
+    "type=top": {
+      "model": "precious:block/mithril_slab_top"
+    }
+  }
+}

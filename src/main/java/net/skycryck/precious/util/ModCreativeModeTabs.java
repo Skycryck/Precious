@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.THE_ONE.get());
                         output.accept(ModItems.RAW_MITHRIL.get());
                         output.accept(ModItems.MITHRIL_INGOT.get());
+                        output.accept(ModBlocks.RAW_MITHRIL_BLOCK.get());
                         output.accept(ModBlocks.MITHRIL_BLOCK.get());
                         output.accept(ModBlocks.MITHRIL_STAIRS.get());
                         output.accept(ModBlocks.MITHRIL_SLAB.get());

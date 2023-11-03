@@ -20,7 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.MITHRIL_BLOCK);
-        //blockWithItem(ModBlocks.RAW_MITHRIL_BLOCK);
+        blockWithItem(ModBlocks.RAW_MITHRIL_BLOCK);
         blockWithItem(ModBlocks.MITHRIL_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_MITHRIL_ORE);
 

@@ -1,0 +1,4 @@
+// 1.20.1	2023-11-03T14:34:59.0290843	Block Tags
+55774a5999211791b4862b58c2c84144ca879ea8 data/forge/tags/blocks/ores.json
+18728ac3633370aa517b460fd846feac610e7e6f data/minecraft/tags/blocks/mineable/pickaxe.json
+18728ac3633370aa517b460fd846feac610e7e6f data/minecraft/tags/blocks/needs_diamond_tool.json

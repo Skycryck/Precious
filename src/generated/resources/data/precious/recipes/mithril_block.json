@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "mithril",
+  "ingredients": [
+    {
+      "item": "precious:mithril_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "precious:mithril_ingot"
+  }
+}
