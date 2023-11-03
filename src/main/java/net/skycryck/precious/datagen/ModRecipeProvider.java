@@ -28,16 +28,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> pWriter) {
 
-        //Build a shaped recipe.
-/*        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MITHRIL_BLOCK.get())
-                .pattern("AAA")
-                .pattern("AAA")
-                .pattern("AAA")
-                .define('A', ModItems.MITHRIL_INGOT.get())
-                .unlockedBy("has_mithril", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(ModItems.MITHRIL_INGOT.get()).build()))
-                .save(pWriter);*/
-
         //Temporary recipe for The One, just to test datagen ;)
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THE_ONE.get())
                 .pattern("AAA")
@@ -48,12 +38,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModItems.MITHRIL_INGOT.get()).build()))
                 .save(pWriter);
 
+        //Mithril Slab
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MITHRIL_SLAB.get(), 6)
+                .define('#', ModItems.MITHRIL_INGOT.get())
+                .pattern("###")
+                .unlockedBy("has_mithril", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.MITHRIL_INGOT.get()).build()))
+                .save(pWriter);
+
+        //Mithril Stairs
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MITHRIL_STAIRS.get(), 4)
+                .define('#', ModItems.MITHRIL_INGOT.get())
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .unlockedBy("has_mithril", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.MITHRIL_INGOT.get()).build()))
+                .save(pWriter);
+
         //Pre-made recipe 9 ingots (Mithril Ingot) into 1 block (Mithril Block).
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), RecipeCategory.MISC, ModBlocks.MITHRIL_BLOCK.get(),
                 "precious:mithril_ingot", "mithril",
                 "precious:mithril_block", "mithril");
+
         //Build a smelting recipe for Raw Mithril
         oreSmelting(pWriter, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.5f, 300, "mithril");
+
         //Build a blasting recipe for Raw Mithril
         oreBlasting(pWriter, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.5f, 150, "mithril");
     }

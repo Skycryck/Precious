@@ -3,10 +3,7 @@ package net.skycryck.precious.block;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -26,6 +23,15 @@ public class ModBlocks {
     //Mithril Block
     public static final RegistryObject<Block> MITHRIL_BLOCK = registerBlock("mithril_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    //Mithril Stairs
+    public static final RegistryObject<Block> MITHRIL_STAIRS = registerBlock("mithril_stairs",
+            () -> new StairBlock(() -> ModBlocks.MITHRIL_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS).sound(SoundType.METAL)));
+
+    //Mithril Slab
+    public static final RegistryObject<Block> MITHRIL_SLAB = registerBlock("mithril_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_STAIRS).sound(SoundType.METAL)));
 
     //Mithril Ore
     public static final RegistryObject<Block> MITHRIL_ORE = registerBlock("mithril_ore",

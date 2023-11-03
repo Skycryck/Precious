@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_MITHRIL.get());
                         output.accept(ModItems.MITHRIL_INGOT.get());
                         output.accept(ModBlocks.MITHRIL_BLOCK.get());
+                        output.accept(ModBlocks.MITHRIL_STAIRS.get());
+                        output.accept(ModBlocks.MITHRIL_SLAB.get());
                         output.accept(ModBlocks.MITHRIL_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
                     }).build());

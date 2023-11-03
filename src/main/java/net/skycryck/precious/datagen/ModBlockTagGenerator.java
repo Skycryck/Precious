@@ -27,12 +27,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.MITHRIL_BLOCK.get(),
                         ModBlocks.MITHRIL_ORE.get(),
-                        ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
+                        ModBlocks.DEEPSLATE_MITHRIL_ORE.get(),
+                        ModBlocks.MITHRIL_STAIRS.get(),
+                        ModBlocks.MITHRIL_SLAB.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MITHRIL_BLOCK.get(),
                         ModBlocks.MITHRIL_ORE.get(),
-                        ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
+                        ModBlocks.DEEPSLATE_MITHRIL_ORE.get(),
+                        ModBlocks.MITHRIL_STAIRS.get(),
+                        ModBlocks.MITHRIL_SLAB.get());
     }
 
     @Override

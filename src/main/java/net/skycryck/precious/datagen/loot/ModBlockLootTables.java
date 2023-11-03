@@ -27,6 +27,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         //When a Deepslate Mithril Ore is destroyed, some Raw Mithril are dropped.
         this.add(ModBlocks.DEEPSLATE_MITHRIL_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));
+
+        this.dropSelf(ModBlocks.MITHRIL_STAIRS.get());
+
+        this.add(ModBlocks.MITHRIL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MITHRIL_SLAB.get()));
     }
 
     //Get all the blocks created from ModBlocks, every block from ModBlocks need to be added above.

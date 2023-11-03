@@ -1,9 +1,11 @@
 {
-  "item.precious.the_one": "The One",
-  "item.precious.mithril_ingot": "Mithril Ingot",
-  "item.precious.raw_mithril": "Raw Mithril",
   "creativetab.precious": "Precious Mod",
-  "block.precious.mithril_block": "Block of Mithril",
+  "item.precious.the_one": "The One",
   "block.precious.mithril_ore": "Mithril Ore",
-  "block.precious.deepslate_mithril_ore": "Deepslate Mithril Ore"
+  "block.precious.deepslate_mithril_ore": "Deepslate Mithril Ore",
+  "item.precious.raw_mithril": "Raw Mithril",
+  "item.precious.mithril_ingot": "Mithril Ingot",
+  "block.precious.mithril_block": "Block of Mithril",
+  "block.precious.mithril_stairs": "Mithril Stairs",
+  "block.precious.mithril_slab": "Mithril Slab"
 }
