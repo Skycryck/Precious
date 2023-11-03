@@ -5,7 +5,7 @@ Precious is a mod that adds a touch of style and utility to your Minecraft adven
 
 ![Forge 1.20.1](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/forge_vector.svg)
 
-[![Download](https://cdn.discordapp.com/attachments/706768779086135337/1169328228494741524/cozy_64h.png)](https://github.com/Skycryck/Precious/releases/download/v1.0.0-alpha/precious-1.0.0-1.20.1-alpha.jar)
+[![Download](https://cdn.discordapp.com/attachments/706768779086135337/1169328228494741524/cozy_64h.png)](https://github.com/Skycryck/Precious/releases)
 
 ##
 
