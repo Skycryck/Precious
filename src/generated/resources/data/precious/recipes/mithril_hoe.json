@@ -6,7 +6,7 @@
       "item": "precious:mithril_ingot"
     },
     "S": {
-      "item": "minecraft:stick"
+      "tag": "forge:rods/wooden"
     }
   },
   "pattern": [

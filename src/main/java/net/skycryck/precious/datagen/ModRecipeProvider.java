@@ -1,7 +1,6 @@
 package net.skycryck.precious.datagen;
 
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+import net.minecraftforge.common.Tags;
 import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.block.ModBlocks;
 import net.skycryck.precious.item.ModItems;
@@ -44,7 +43,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_SWORD
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_SWORD.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Items.STICK)
+                .define('S', Tags.Items.RODS_WOODEN)
                 .pattern(" M ")
                 .pattern(" M ")
                 .pattern(" S ")
@@ -54,7 +53,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_PICKAXE
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_PICKAXE.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Items.STICK)
+                .define('S', Tags.Items.RODS_WOODEN)
                 .pattern("MMM")
                 .pattern(" S ")
                 .pattern(" S ")
@@ -64,7 +63,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_AXE
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_AXE.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Items.STICK)
+                .define('S', Tags.Items.RODS_WOODEN)
                 .pattern("MM ")
                 .pattern("MS ")
                 .pattern(" S ")
@@ -74,7 +73,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_SHOVEL
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_SHOVEL.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Items.STICK)
+                .define('S', Tags.Items.RODS_WOODEN)
                 .pattern(" M ")
                 .pattern(" S ")
                 .pattern(" S ")
@@ -84,7 +83,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_HOE
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_HOE.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Items.STICK)
+                .define('S', Tags.Items.RODS_WOODEN)
                 .pattern("MM ")
                 .pattern(" S ")
                 .pattern(" S ")
@@ -93,7 +92,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //Mithril Armor
         //MITHRIL_HELMET
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_HELMET.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
                 .pattern("MMM")
                 .pattern("M M")
@@ -102,7 +101,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         //MITHRIL_CHESTPLATE
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_CHESTPLATE.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
                 .pattern("M M")
                 .pattern("MMM")
@@ -111,7 +110,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         //MITHRIL_LEGGINGS
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_LEGGINGS.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
                 .pattern("MMM")
                 .pattern("M M")
@@ -120,7 +119,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         //MITHRIL_BOOTS
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_BOOTS.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
                 .pattern("   ")
                 .pattern("M M")

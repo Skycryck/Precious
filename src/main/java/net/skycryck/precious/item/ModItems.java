@@ -13,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, PreciousMod.MOD_ID);
 
     public static final RegistryObject<Item> THE_ONE = ITEMS.register("the_one",
-            () -> new TheOneItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
+            () -> new TheOneItem(new Item.Properties().fireResistant().stacksTo(1).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
             () -> new Item(new Item.Properties()));
@@ -34,19 +34,19 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.MITHRIL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static final RegistryObject<Item> MITHRIL_SWORD = ITEMS.register("mithril_sword",
-            () -> new SwordItem(ModToolTiers.MITHRIL, 2,3, new Item.Properties().durability(256)));
+            () -> new SwordItem(ModToolTiers.MITHRIL, 3,-2.4F, new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.MITHRIL, 1,3, new Item.Properties().durability(256)));
+            () -> new PickaxeItem(ModToolTiers.MITHRIL, 1,-2.8F, new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> MITHRIL_AXE = ITEMS.register("mithril_axe",
-            () -> new AxeItem(ModToolTiers.MITHRIL, 2,3, new Item.Properties().durability(256)));
+            () -> new AxeItem(ModToolTiers.MITHRIL, 5.0F,-3.0F, new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> MITHRIL_SHOVEL = ITEMS.register("mithril_shovel",
-            () -> new ShovelItem(ModToolTiers.MITHRIL, 2,3, new Item.Properties().durability(256)));
+            () -> new ShovelItem(ModToolTiers.MITHRIL, 1.5F,-3.0F, new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe",
-            () -> new HoeItem(ModToolTiers.MITHRIL, 2,3, new Item.Properties().durability(256)));
+            () -> new HoeItem(ModToolTiers.MITHRIL, -4,0.0F, new Item.Properties().durability(256)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

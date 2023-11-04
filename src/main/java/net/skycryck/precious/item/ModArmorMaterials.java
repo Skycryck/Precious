@@ -15,7 +15,7 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    MITHRIL("mithril", 24, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
+    MITHRIL("mithril", 45, Util.make(new EnumMap<>(ArmorItem.Type.class), (p_266655_) -> {
         p_266655_.put(ArmorItem.Type.BOOTS, 6);
         p_266655_.put(ArmorItem.Type.LEGGINGS, 9);
         p_266655_.put(ArmorItem.Type.CHESTPLATE, 13);

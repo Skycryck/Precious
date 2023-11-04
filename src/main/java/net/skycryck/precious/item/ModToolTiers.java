@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ModToolTiers {
     public static final Tier MITHRIL = TierSortingRegistry.registerTier(
-            new ForgeTier(5, 3000, 10f, 5.0f, 26,
+            new ForgeTier(4, 2031, 9.0F, 4.0F, 15,
                     ModTags.Blocks.NEEDS_MITHRIL_TOOL, () -> Ingredient.of(ModItems.MITHRIL_INGOT.get())),
             new ResourceLocation(PreciousMod.MOD_ID, "mithril"), List.of(Tiers.NETHERITE), List.of());
 }
