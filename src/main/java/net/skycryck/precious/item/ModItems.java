@@ -1,8 +1,6 @@
 package net.skycryck.precious.item;
 
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -34,6 +32,21 @@ public class ModItems {
 
     public static final RegistryObject<Item> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
             () -> new ArmorItem(ModArmorMaterials.MITHRIL, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> MITHRIL_SWORD = ITEMS.register("mithril_sword",
+            () -> new SwordItem(ModToolTiers.MITHRIL, 2,3, new Item.Properties().durability(256)));
+
+    public static final RegistryObject<Item> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.MITHRIL, 1,3, new Item.Properties().durability(256)));
+
+    public static final RegistryObject<Item> MITHRIL_AXE = ITEMS.register("mithril_axe",
+            () -> new AxeItem(ModToolTiers.MITHRIL, 2,3, new Item.Properties().durability(256)));
+
+    public static final RegistryObject<Item> MITHRIL_SHOVEL = ITEMS.register("mithril_shovel",
+            () -> new ShovelItem(ModToolTiers.MITHRIL, 2,3, new Item.Properties().durability(256)));
+
+    public static final RegistryObject<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe",
+            () -> new HoeItem(ModToolTiers.MITHRIL, 2,3, new Item.Properties().durability(256)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

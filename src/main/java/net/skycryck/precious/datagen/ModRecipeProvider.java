@@ -1,5 +1,7 @@
 package net.skycryck.precious.datagen;
 
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.block.ModBlocks;
 import net.skycryck.precious.item.ModItems;
@@ -30,14 +32,103 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //Temporary recipe for The One, just to test datagen ;)
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THE_ONE.get())
-                .pattern("AAA")
-                .pattern("A A")
-                .pattern("AAA")
-                .define('A', ModItems.MITHRIL_INGOT.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("MMM")
+                .define('M', ModItems.MITHRIL_INGOT.get())
                 .unlockedBy("has_mithril", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.MITHRIL_INGOT.get()).build()))
                 .save(pWriter);
 
+        //Mithril Tools :
+        //MITHRIL_SWORD
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_SWORD.get())
+                .define('M', ModItems.MITHRIL_INGOT.get())
+                .define('S', Items.STICK)
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" S ")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //MITHRIL_PICKAXE
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_PICKAXE.get())
+                .define('M', ModItems.MITHRIL_INGOT.get())
+                .define('S', Items.STICK)
+                .pattern("MMM")
+                .pattern(" S ")
+                .pattern(" S ")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //MITHRIL_AXE
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_AXE.get())
+                .define('M', ModItems.MITHRIL_INGOT.get())
+                .define('S', Items.STICK)
+                .pattern("MM ")
+                .pattern("MS ")
+                .pattern(" S ")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //MITHRIL_SHOVEL
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_SHOVEL.get())
+                .define('M', ModItems.MITHRIL_INGOT.get())
+                .define('S', Items.STICK)
+                .pattern(" M ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //MITHRIL_HOE
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_HOE.get())
+                .define('M', ModItems.MITHRIL_INGOT.get())
+                .define('S', Items.STICK)
+                .pattern("MM ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //Mithril Armor
+        //MITHRIL_HELMET
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_HELMET.get())
+                .define('M', ModItems.MITHRIL_INGOT.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("   ")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //MITHRIL_CHESTPLATE
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_CHESTPLATE.get())
+                .define('M', ModItems.MITHRIL_INGOT.get())
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //MITHRIL_LEGGINGS
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_LEGGINGS.get())
+                .define('M', ModItems.MITHRIL_INGOT.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //MITHRIL_BOOTS
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_BOOTS.get())
+                .define('M', ModItems.MITHRIL_INGOT.get())
+                .pattern("   ")
+                .pattern("M M")
+                .pattern("M M")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //Mithril Blocks
         //Mithril Slab
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MITHRIL_SLAB.get(), 6)
                 .define('#', ModItems.MITHRIL_INGOT.get())
@@ -61,6 +152,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 "precious:mithril_ingot", "mithril",
                 "precious:mithril_block", "mithril");
 
+        //Pre-made recipe 9 raw (Raw Mithril) into 1 block (Raw Mithril Block).
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.RAW_MITHRIL.get(), RecipeCategory.MISC, ModBlocks.RAW_MITHRIL_BLOCK.get(),
                 "precious:raw_mithril", "mithril",
                 "precious:raw_mithril_block", "mithril");

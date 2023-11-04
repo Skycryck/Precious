@@ -21,14 +21,19 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.precious"))
                     .displayItems((displayParameters, output) -> {
                         output.accept(ModItems.THE_ONE.get());
+                        output.accept(ModBlocks.MITHRIL_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
                         output.accept(ModItems.RAW_MITHRIL.get());
                         output.accept(ModItems.MITHRIL_INGOT.get());
                         output.accept(ModBlocks.RAW_MITHRIL_BLOCK.get());
                         output.accept(ModBlocks.MITHRIL_BLOCK.get());
                         output.accept(ModBlocks.MITHRIL_STAIRS.get());
                         output.accept(ModBlocks.MITHRIL_SLAB.get());
-                        output.accept(ModBlocks.MITHRIL_ORE.get());
-                        output.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
+                        output.accept(ModItems.MITHRIL_SWORD.get());
+                        output.accept(ModItems.MITHRIL_PICKAXE.get());
+                        output.accept(ModItems.MITHRIL_AXE.get());
+                        output.accept(ModItems.MITHRIL_SHOVEL.get());
+                        output.accept(ModItems.MITHRIL_HOE.get());
                         output.accept(ModItems.MITHRIL_HELMET.get());
                         output.accept(ModItems.MITHRIL_CHESTPLATE.get());
                         output.accept(ModItems.MITHRIL_LEGGINGS.get());

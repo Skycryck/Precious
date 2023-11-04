@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "key": {
     "M": {
       "item": "precious:mithril_ingot"
@@ -9,10 +9,10 @@
   "pattern": [
     "MMM",
     "M M",
-    "MMM"
+    "M M"
   ],
   "result": {
-    "item": "precious:the_one"
+    "item": "precious:mithril_leggings"
   },
   "show_notification": true
 }

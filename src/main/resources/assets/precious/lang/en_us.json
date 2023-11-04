@@ -17,5 +17,11 @@
   "item.precious.mithril_helmet": "Mithril Helmet",
   "item.precious.mithril_chestplate": "Mithril Chestplate",
   "item.precious.mithril_leggings": "Mithril Leggings",
-  "item.precious.mithril_boots": "Mithril Boots"
+  "item.precious.mithril_boots": "Mithril Boots",
+
+  "item.precious.mithril_sword": "Mithril Sword",
+  "item.precious.mithril_pickaxe": "Mithril Pickaxe",
+  "item.precious.mithril_axe": "Mithril Axe",
+  "item.precious.mithril_shovel": "Mithril Shovel",
+  "item.precious.mithril_hoe": "Mithril Hoe"
 }

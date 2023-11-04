@@ -1,8 +1,13 @@
-// 1.20.1	2023-11-04T09:59:11.2096971	Item Models: precious
+// 1.20.1	2023-11-04T12:33:59.9196994	Item Models: precious
+661492b1c56f80bb8115fd3153cdfd61ae735460 assets/precious/models/item/mithril_axe.json
 3f52db970271d42cc99800c9467744d47ce9f0a4 assets/precious/models/item/mithril_boots.json
 f7781ac87b10a2bfe1144c0b71633791a79cb32a assets/precious/models/item/mithril_chestplate.json
 022fa1e90ace1cb66a201b3092e56f0481b6d99d assets/precious/models/item/mithril_helmet.json
+4010adcc089db7e5533f08cf155de716b3dc10b9 assets/precious/models/item/mithril_hoe.json
 b4f9e64ee67a8d4a6076c0b948570723ce14cb4a assets/precious/models/item/mithril_ingot.json
 1a22f6219c4f0ce440b5ab9300be81dcd129f95e assets/precious/models/item/mithril_leggings.json
+835d45de070f1b81435cde0c844911ae1523b77c assets/precious/models/item/mithril_pickaxe.json
+747a73f407155bb54b5e78b31615ee20a928ac8c assets/precious/models/item/mithril_shovel.json
+13a7630acaf51265df69ef0f96beda8756dfb8ae assets/precious/models/item/mithril_sword.json
 0155c7d1a3854c1fdbb4f0d87b872ba881bd0e7c assets/precious/models/item/raw_mithril.json
 fc402c77c867996ce3162414d048929afeac115c assets/precious/models/item/the_one.json

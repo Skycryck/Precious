@@ -1,18 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "key": {
     "M": {
       "item": "precious:mithril_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
     "MMM",
-    "M M",
-    "MMM"
+    " S ",
+    " S "
   ],
   "result": {
-    "item": "precious:the_one"
+    "item": "precious:mithril_pickaxe"
   },
   "show_notification": true
 }

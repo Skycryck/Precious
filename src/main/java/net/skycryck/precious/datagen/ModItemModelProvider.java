@@ -21,6 +21,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_MITHRIL);
         simpleItem(ModItems.THE_ONE);
 
+        handheldItem(ModItems.MITHRIL_SWORD);
+        handheldItem(ModItems.MITHRIL_PICKAXE);
+        handheldItem(ModItems.MITHRIL_AXE);
+        handheldItem(ModItems.MITHRIL_SHOVEL);
+        handheldItem(ModItems.MITHRIL_HOE);
+
         simpleItem(ModItems.MITHRIL_HELMET);
         simpleItem(ModItems.MITHRIL_CHESTPLATE);
         simpleItem(ModItems.MITHRIL_LEGGINGS);
@@ -30,6 +36,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(PreciousMod.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(PreciousMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 }
