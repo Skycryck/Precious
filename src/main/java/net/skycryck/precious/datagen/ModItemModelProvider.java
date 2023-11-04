@@ -26,6 +26,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.MITHRIL_AXE);
         handheldItem(ModItems.MITHRIL_SHOVEL);
         handheldItem(ModItems.MITHRIL_HOE);
+        handheldItem(ModItems.MITHRIL_PAXEL);
 
         simpleItem(ModItems.MITHRIL_HELMET);
         simpleItem(ModItems.MITHRIL_CHESTPLATE);

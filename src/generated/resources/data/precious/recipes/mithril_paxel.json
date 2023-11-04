@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "precious:mithril_axe"
+    },
+    "I": {
+      "tag": "forge:rods/wooden"
+    },
+    "P": {
+      "item": "precious:mithril_pickaxe"
+    },
+    "S": {
+      "item": "precious:mithril_shovel"
+    }
+  },
+  "pattern": [
+    "ASP",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "item": "precious:mithril_paxel"
+  },
+  "show_notification": true
+}

@@ -9,6 +9,7 @@ import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.skycryck.precious.util.ModTags;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -19,7 +20,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider pProvider) {
+    protected void addTags(HolderLookup.@NotNull Provider pProvider) {
 
         this.tag(Tags.Blocks.ORES)
                 .add(ModBlocks.MITHRIL_ORE.get(),
@@ -43,10 +44,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
 /*        this.tag(ModTags.Blocks.NEEDS_MITHRIL_TOOL)
                 .add(ModBlocks.EXAMPLE.get());*/
+
+        this.tag(ModTags.Blocks.PAXEL_MINABLE)
+                .addTags(BlockTags.MINEABLE_WITH_PICKAXE, BlockTags.MINEABLE_WITH_AXE, BlockTags.MINEABLE_WITH_SHOVEL);
     }
 
     @Override
-    public String getName() {
+    public @NotNull String getName() {
         return "Block Tags";
     }
 }

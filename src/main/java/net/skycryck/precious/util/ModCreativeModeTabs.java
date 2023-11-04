@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MITHRIL_AXE.get());
                         output.accept(ModItems.MITHRIL_SHOVEL.get());
                         output.accept(ModItems.MITHRIL_HOE.get());
+                        output.accept(ModItems.MITHRIL_PAXEL.get());
                         output.accept(ModItems.MITHRIL_HELMET.get());
                         output.accept(ModItems.MITHRIL_CHESTPLATE.get());
                         output.accept(ModItems.MITHRIL_LEGGINGS.get());

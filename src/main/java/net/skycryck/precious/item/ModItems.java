@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.skycryck.precious.PreciousMod;
+import net.skycryck.precious.item.custom.PaxelItem;
 import net.skycryck.precious.item.custom.TheOneItem;
 
 public class ModItems {
@@ -47,6 +48,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe",
             () -> new HoeItem(ModToolTiers.MITHRIL, -4,0.0F, new Item.Properties().durability(256)));
+
+    public static final RegistryObject<Item> MITHRIL_PAXEL = ITEMS.register("mithril_paxel",
+            () -> new PaxelItem(ModToolTiers.MITHRIL, 3,-2.4F, new Item.Properties().durability(256)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

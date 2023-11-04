@@ -90,6 +90,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
                 .save(pWriter);
 
+        //MITHRIL_PAXEL
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_PAXEL.get())
+                .define('P', ModItems.MITHRIL_PICKAXE.get())
+                .define('A', ModItems.MITHRIL_AXE.get())
+                .define('S', ModItems.MITHRIL_SHOVEL.get())
+                .define('I', Tags.Items.RODS_WOODEN)
+                .pattern("ASP")
+                .pattern(" I ")
+                .pattern(" I ")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
         //Mithril Armor
         //MITHRIL_HELMET
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_HELMET.get())
