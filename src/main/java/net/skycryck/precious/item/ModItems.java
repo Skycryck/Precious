@@ -7,13 +7,14 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.skycryck.precious.PreciousMod;
+import net.skycryck.precious.item.custom.TheOneItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, PreciousMod.MOD_ID);
 
     public static final RegistryObject<Item> THE_ONE = ITEMS.register("the_one",
-            () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
+            () -> new TheOneItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
             () -> new Item(new Item.Properties()));

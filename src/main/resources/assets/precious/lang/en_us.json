@@ -1,12 +1,16 @@
 {
   "creativetab.precious": "Precious Mod",
+
   "item.precious.the_one": "The One",
+  "tooltip.precious.the_one.tooltip.shift": "Can make you invisible when wear, also make you stronger and extend your life.",
+  "tooltip.precious.the_one.tooltip": "§6My Precious !§r Hold §eSHIFT§r for details.",
+
   "block.precious.mithril_ore": "Mithril Ore",
   "block.precious.deepslate_mithril_ore": "Deepslate Mithril Ore",
   "item.precious.raw_mithril": "Raw Mithril",
+  "block.precious.raw_mithril_block": "Block of Raw Mithril",
   "item.precious.mithril_ingot": "Mithril Ingot",
   "block.precious.mithril_block": "Block of Mithril",
-  "block.precious.raw_mithril_block": "Block of Raw Mithril",
   "block.precious.mithril_stairs": "Mithril Stairs",
   "block.precious.mithril_slab": "Mithril Slab"
 }
