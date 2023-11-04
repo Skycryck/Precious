@@ -20,6 +20,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MITHRIL_INGOT);
         simpleItem(ModItems.RAW_MITHRIL);
         simpleItem(ModItems.THE_ONE);
+
+        simpleItem(ModItems.MITHRIL_HELMET);
+        simpleItem(ModItems.MITHRIL_CHESTPLATE);
+        simpleItem(ModItems.MITHRIL_LEGGINGS);
+        simpleItem(ModItems.MITHRIL_BOOTS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

@@ -29,6 +29,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MITHRIL_SLAB.get());
                         output.accept(ModBlocks.MITHRIL_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
+                        output.accept(ModItems.MITHRIL_HELMET.get());
+                        output.accept(ModItems.MITHRIL_CHESTPLATE.get());
+                        output.accept(ModItems.MITHRIL_LEGGINGS.get());
+                        output.accept(ModItems.MITHRIL_BOOTS.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {
