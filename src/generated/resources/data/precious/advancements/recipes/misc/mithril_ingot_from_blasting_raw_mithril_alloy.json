@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_mithril_ore": {
+    "has_raw_mithril_alloy": {
       "conditions": {
         "items": [
           {
             "items": [
-              "precious:deepslate_mithril_ore"
+              "precious:raw_mithril_alloy"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "precious:mithril_ingot_from_blasting_deepslate_mithril_ore"
+        "recipe": "precious:mithril_ingot_from_blasting_raw_mithril_alloy"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_deepslate_mithril_ore",
+      "has_raw_mithril_alloy",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "precious:mithril_ingot_from_blasting_deepslate_mithril_ore"
+      "precious:mithril_ingot_from_blasting_raw_mithril_alloy"
     ]
   },
   "sends_telemetry_event": false

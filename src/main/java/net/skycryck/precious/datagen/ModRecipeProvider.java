@@ -20,7 +20,7 @@ import java.util.function.Consumer;
 //Provide the recipe to the game for all the blocks and items the mod add
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     //List of all the Mithril items/blocks that you can smelt.
-    private static final List<ItemLike> MITHRIL_SMELTABLES = List.of(ModItems.RAW_MITHRIL.get(), ModBlocks.MITHRIL_ORE.get(), ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
+    private static final List<ItemLike> MITHRIL_SMELTABLES = List.of(ModItems.RAW_MITHRIL_ALLOY.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -167,6 +167,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.RAW_MITHRIL.get(), RecipeCategory.MISC, ModBlocks.RAW_MITHRIL_BLOCK.get(),
                 "precious:raw_mithril", "mithril",
                 "precious:raw_mithril_block", "mithril");
+
+        //RAW_MITHRIL_ALLOY
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RAW_MITHRIL_ALLOY.get())
+                .define('M', ModItems.RAW_MITHRIL.get())
+                .define('G', Tags.Items.RAW_MATERIALS_GOLD)
+                .define('D', Tags.Items.GEMS_DIAMOND)
+                .pattern("DGD")
+                .pattern("GMG")
+                .pattern("GGG")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
 
         //Build a smelting recipe for Raw Mithril
         oreSmelting(pWriter, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.5f, 300, "mithril");

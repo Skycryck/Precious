@@ -5,7 +5,7 @@
   "experience": 0.5,
   "group": "mithril",
   "ingredient": {
-    "item": "precious:deepslate_mithril_ore"
+    "item": "precious:raw_mithril_alloy"
   },
   "result": "precious:mithril_ingot"
 }

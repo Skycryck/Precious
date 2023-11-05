@@ -22,6 +22,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_MITHRIL = ITEMS.register("raw_mithril",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RAW_MITHRIL_ALLOY = ITEMS.register("raw_mithril_alloy",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> MITHRIL_HELMET = ITEMS.register("mithril_helmet",
             () -> new ArmorItem(ModArmorMaterials.MITHRIL, ArmorItem.Type.HELMET, new Item.Properties()));
 
