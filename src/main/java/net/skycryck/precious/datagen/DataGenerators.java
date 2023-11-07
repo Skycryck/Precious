@@ -1,7 +1,6 @@
 package net.skycryck.precious.datagen;
 
 import net.skycryck.precious.PreciousMod;
-import net.skycryck.precious.datagen.loot.ModBlockLootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

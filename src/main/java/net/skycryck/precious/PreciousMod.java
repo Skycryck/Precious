@@ -1,6 +1,5 @@
 package net.skycryck.precious;
 
-import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -14,13 +13,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.skycryck.precious.block.ModBlocks;
 import net.skycryck.precious.item.ModItems;
 import net.skycryck.precious.util.ModCreativeModeTabs;
-import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(PreciousMod.MOD_ID)
 public class PreciousMod {
     public static final String MOD_ID = "precious";
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public PreciousMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
