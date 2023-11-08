@@ -7,7 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.item.custom.PaxelItem;
-import net.skycryck.precious.item.custom.TheOneItem;
+import net.skycryck.precious.item.custom.curios.TheOneItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
