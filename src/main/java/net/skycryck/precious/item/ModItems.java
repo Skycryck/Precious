@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.item.custom.PaxelItem;
+import net.skycryck.precious.item.custom.curios.TalariaShoesItem;
 import net.skycryck.precious.item.custom.curios.TheOneItem;
 
 public class ModItems {
@@ -15,6 +16,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> THE_ONE = ITEMS.register("the_one",
             () -> new TheOneItem(new Item.Properties().fireResistant().stacksTo(1).rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> TALARIA_SHOES = ITEMS.register("talaria_shoes",
+            () -> new TalariaShoesItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
             () -> new Item(new Item.Properties()));

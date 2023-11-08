@@ -14,20 +14,20 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import java.util.List;
 
-public class TheOneItem extends CuriosItem implements ICurioItem {
-
-    public TheOneItem(Properties pProperties) {
+public class TalariaShoesItem extends CuriosItem implements ICurioItem {
+    public TalariaShoesItem(Properties pProperties) {
         super(pProperties);
-        this.addEffect(MobEffects.INVISIBILITY);
-        this.addEffect(MobEffects.NIGHT_VISION);
+        this.addEffect(MobEffects.MOVEMENT_SPEED, 2);
+        this.addEffect(MobEffects.SLOW_FALLING);
+        this.addEffect(MobEffects.JUMP, 4);
     }
 
     @Override
     public void appendHoverText(@NotNull ItemStack pStack, @Nullable Level pLevel, @NotNull List<Component> pTooltipComponents, @NotNull TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(Component.translatable("tooltip.precious.the_one.tooltip.shift"));
+            pTooltipComponents.add(Component.translatable("tooltip.precious.talaria_shoes.tooltip.shift"));
         } else {
-            pTooltipComponents.add(Component.translatable("tooltip.precious.the_one.tooltip"));
+            pTooltipComponents.add(Component.translatable("tooltip.precious.talaria_shoes.tooltip"));
         }
 
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);

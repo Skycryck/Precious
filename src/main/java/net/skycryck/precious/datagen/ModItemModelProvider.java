@@ -20,7 +20,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MITHRIL_INGOT);
         simpleItem(ModItems.RAW_MITHRIL);
         simpleItem(ModItems.RAW_MITHRIL_ALLOY);
+
         simpleItem(ModItems.THE_ONE);
+        simpleItem(ModItems.TALARIA_SHOES);
 
         handheldItem(ModItems.MITHRIL_SWORD);
         handheldItem(ModItems.MITHRIL_PICKAXE);

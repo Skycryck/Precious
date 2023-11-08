@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-05T14:23:06.1894656	Item Models: precious
+// 1.20.1	2023-11-08T17:59:43.2960282	Item Models: precious
 661492b1c56f80bb8115fd3153cdfd61ae735460 assets/precious/models/item/mithril_axe.json
 3f52db970271d42cc99800c9467744d47ce9f0a4 assets/precious/models/item/mithril_boots.json
 f7781ac87b10a2bfe1144c0b71633791a79cb32a assets/precious/models/item/mithril_chestplate.json
@@ -12,4 +12,5 @@ b4f9e64ee67a8d4a6076c0b948570723ce14cb4a assets/precious/models/item/mithril_ing
 13a7630acaf51265df69ef0f96beda8756dfb8ae assets/precious/models/item/mithril_sword.json
 0155c7d1a3854c1fdbb4f0d87b872ba881bd0e7c assets/precious/models/item/raw_mithril.json
 6be68371cd3a1a8f562d2ea5647b83800eeb96c9 assets/precious/models/item/raw_mithril_alloy.json
+443ba7d5d9163790e7bef1ca829814ee9b26d086 assets/precious/models/item/talaria_shoes.json
 fc402c77c867996ce3162414d048929afeac115c assets/precious/models/item/the_one.json

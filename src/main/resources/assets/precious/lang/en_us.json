@@ -5,6 +5,10 @@
   "tooltip.precious.the_one.tooltip.shift": "Can make you invisible when wear, also make you stronger and extend your life.",
   "tooltip.precious.the_one.tooltip": "§6My Precious !§r Hold §eSHIFT§r for details.",
 
+  "item.precious.talaria_shoes": "Talaria Shoes",
+  "tooltip.precious.talaria_shoes.tooltip.shift": "Make you jump higher and move faster.",
+  "tooltip.precious.talaria_shoes.tooltip": "§6Fast shoes !§r Hold §eSHIFT§r for details.",
+
   "block.precious.mithril_ore": "Mithril Ore",
   "block.precious.deepslate_mithril_ore": "Deepslate Mithril Ore",
   "item.precious.raw_mithril": "Raw Mithril",
