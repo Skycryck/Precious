@@ -1,5 +1,6 @@
 package net.skycryck.precious.datagen;
 
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.block.ModBlocks;
@@ -37,6 +38,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('M', ModItems.MITHRIL_INGOT.get())
                 .unlockedBy("has_mithril", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.MITHRIL_INGOT.get()).build()))
+                .save(pWriter);
+
+        //MITHRIL_NUGGET
+        nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.MITHRIL_NUGGET.get(), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(),
+                "precious:mithril_nugget", "mithril",
+                "precious:mithril_ingot_from_nugget", "mithril");
+
+        //MITHRIL_CHAIN
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MITHRIL_CHAIN.get())
+                .define('I', ModItems.MITHRIL_INGOT.get())
+                .define('N', ModItems.MITHRIL_NUGGET.get())
+                .pattern(" N ")
+                .pattern(" I ")
+                .pattern(" N ")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        //GOLD_CHAIN
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLD_CHAIN.get())
+                .define('I', Tags.Items.INGOTS_GOLD)
+                .define('N', Tags.Items.NUGGETS_GOLD)
+                .pattern(" N ")
+                .pattern(" I ")
+                .pattern(" N ")
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
                 .save(pWriter);
 
         //Mithril Tools :
@@ -201,8 +227,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void oreCooking(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer, @NotNull RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer,
                                      List<ItemLike> pIngredients, @NotNull RecipeCategory pCategory, @NotNull ItemLike pResult, float pExperience, int pCookingTime, @NotNull String pGroup, String pRecipeName) {
         for(ItemLike itemlike : pIngredients) {
-            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime,
-                            pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
+            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer)
+                    .group(pGroup)
+                    .unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(pFinishedRecipeConsumer, PreciousMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
     }

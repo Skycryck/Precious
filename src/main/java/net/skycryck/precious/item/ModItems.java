@@ -20,6 +20,15 @@ public class ModItems {
     public static final RegistryObject<Item> TALARIA_SHOES = ITEMS.register("talaria_shoes",
             () -> new TalariaShoesItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
 
+    public static final RegistryObject<Item> GOLD_CHAIN = ITEMS.register("gold_chain",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MITHRIL_CHAIN = ITEMS.register("mithril_chain",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot",
             () -> new Item(new Item.Properties()));
 

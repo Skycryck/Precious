@@ -24,6 +24,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.THE_ONE);
         simpleItem(ModItems.TALARIA_SHOES);
 
+        simpleItem(ModItems.GOLD_CHAIN);
+        simpleItem(ModItems.MITHRIL_CHAIN);
+        simpleItem(ModItems.MITHRIL_NUGGET);
+
         handheldItem(ModItems.MITHRIL_SWORD);
         handheldItem(ModItems.MITHRIL_PICKAXE);
         handheldItem(ModItems.MITHRIL_AXE);

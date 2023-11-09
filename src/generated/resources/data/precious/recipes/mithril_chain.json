@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "precious:mithril_ingot"
+    },
+    "N": {
+      "item": "precious:mithril_nugget"
+    }
+  },
+  "pattern": [
+    " N ",
+    " I ",
+    " N "
+  ],
+  "result": {
+    "item": "precious:mithril_chain"
+  },
+  "show_notification": true
+}

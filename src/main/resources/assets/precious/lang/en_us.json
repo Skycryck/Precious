@@ -9,15 +9,20 @@
   "tooltip.precious.talaria_shoes.tooltip.shift": "Make you jump higher and move faster.",
   "tooltip.precious.talaria_shoes.tooltip": "§6Fast shoes !§r Hold §eSHIFT§r for details.",
 
+  "item.precious.gold_chain": "Gold Chain",
+  "item.precious.mithril_chain": "Mithril Chain",
+  "item.precious.mithril_nugget": "Mithril Nugget",
+
   "block.precious.mithril_ore": "Mithril Ore",
   "block.precious.deepslate_mithril_ore": "Deepslate Mithril Ore",
-  "item.precious.raw_mithril": "Raw Mithril",
-  "item.precious.raw_mithril_alloy": "Raw Mithril Alloy",
   "block.precious.raw_mithril_block": "Block of Raw Mithril",
-  "item.precious.mithril_ingot": "Mithril Ingot",
   "block.precious.mithril_block": "Block of Mithril",
   "block.precious.mithril_stairs": "Mithril Stairs",
   "block.precious.mithril_slab": "Mithril Slab",
+
+  "item.precious.raw_mithril": "Raw Mithril",
+  "item.precious.raw_mithril_alloy": "Raw Mithril Alloy",
+  "item.precious.mithril_ingot": "Mithril Ingot",
 
   "item.precious.mithril_helmet": "Mithril Helmet",
   "item.precious.mithril_chestplate": "Mithril Chestplate",
