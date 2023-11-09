@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "precious:gold_chain"
+    },
+    "E": {
+      "tag": "forge:gems/emerald"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "C C",
+    "CEC"
+  ],
+  "result": {
+    "item": "precious:gold_amulet"
+  },
+  "show_notification": true
+}

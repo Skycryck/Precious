@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "precious:mithril_ingot"
+    },
+    {
+      "item": "precious:mithril_ingot"
+    },
+    {
+      "item": "precious:mithril_ingot"
+    },
+    {
+      "item": "precious:mithril_ingot"
+    },
+    {
+      "item": "precious:mithril_ingot"
+    },
+    {
+      "item": "precious:mithril_ingot"
+    },
+    {
+      "item": "precious:mithril_ingot"
+    },
+    {
+      "item": "precious:mithril_ingot"
+    },
+    {
+      "item": "precious:mithril_ingot"
+    }
+  ],
+  "result": {
+    "item": "precious:mithril_block"
+  }
+}

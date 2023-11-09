@@ -1,6 +1,8 @@
-// 1.20.1	2023-11-09T10:48:35.2821815	Item Models: precious
+// 1.20.1	2023-11-09T15:22:31.9447081	Item Models: precious
+436677880c0b2ab947d43a0d7b82d40bb762e2cf assets/precious/models/item/gold_amulet.json
 82bbd5019baaa8f42f3bed9b9e01ac8939cb3b05 assets/precious/models/item/gold_chain.json
 617a325fcca25d56eafe9f3e62d1a832b7afd314 assets/precious/models/item/gold_ring.json
+89edcb364c9f84d12b73ced67b67267052ebb7ba assets/precious/models/item/mithril_amulet.json
 661492b1c56f80bb8115fd3153cdfd61ae735460 assets/precious/models/item/mithril_axe.json
 3f52db970271d42cc99800c9467744d47ce9f0a4 assets/precious/models/item/mithril_boots.json
 b640f2f516cd95341e743ecc691544adbaf89fe6 assets/precious/models/item/mithril_chain.json
@@ -15,7 +17,9 @@ b4f9e64ee67a8d4a6076c0b948570723ce14cb4a assets/precious/models/item/mithril_ing
 815a7cb07d5417d003613ccb52c34709a6948f17 assets/precious/models/item/mithril_ring.json
 747a73f407155bb54b5e78b31615ee20a928ac8c assets/precious/models/item/mithril_shovel.json
 13a7630acaf51265df69ef0f96beda8756dfb8ae assets/precious/models/item/mithril_sword.json
+46726f0202b05269782b91b729c07a8a247584ad assets/precious/models/item/quiver.json
 0155c7d1a3854c1fdbb4f0d87b872ba881bd0e7c assets/precious/models/item/raw_mithril.json
 6be68371cd3a1a8f562d2ea5647b83800eeb96c9 assets/precious/models/item/raw_mithril_alloy.json
 443ba7d5d9163790e7bef1ca829814ee9b26d086 assets/precious/models/item/talaria_shoes.json
 fc402c77c867996ce3162414d048929afeac115c assets/precious/models/item/the_one.json
+a525f49bd9e05042e7b71cbab645aa7ac2dc648e assets/precious/models/item/tool_belt.json

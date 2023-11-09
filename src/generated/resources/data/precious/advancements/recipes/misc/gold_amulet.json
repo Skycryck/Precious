@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_raw_mithril": {
+    "has_gold_chain": {
       "conditions": {
         "items": [
           {
             "items": [
-              "precious:raw_mithril"
+              "precious:gold_chain"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "precious:raw_mithril"
+        "recipe": "precious:gold_amulet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_raw_mithril",
+      "has_gold_chain",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "precious:raw_mithril"
+      "precious:gold_amulet"
     ]
   },
   "sends_telemetry_event": false

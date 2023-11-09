@@ -6,11 +6,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.skycryck.precious.PreciousMod;
-import net.skycryck.precious.item.custom.PaxelItem;
-import net.skycryck.precious.item.custom.curios.GoldRingItem;
-import net.skycryck.precious.item.custom.curios.MithrilRingItem;
-import net.skycryck.precious.item.custom.curios.TalariaShoesItem;
-import net.skycryck.precious.item.custom.curios.TheOneItem;
+import net.skycryck.precious.item.custom.*;
+import net.skycryck.precious.item.custom.curios.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -27,6 +24,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> MITHRIL_RING = ITEMS.register("mithril_ring",
             () -> new MithrilRingItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
+
+    public static final RegistryObject<Item> GOLD_AMULET = ITEMS.register("gold_amulet",
+            () -> new GoldAmuletItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+
+    public static final RegistryObject<Item> MITHRIL_AMULET = ITEMS.register("mithril_amulet",
+            () -> new MithrilAmuletItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
+
+    public static final RegistryObject<Item> TOOL_BELT = ITEMS.register("tool_belt",
+            () -> new ToolBeltItem(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
+
+    public static final RegistryObject<Item> QUIVER = ITEMS.register("quiver",
+            () -> new QuiverItem(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
 
     public static final RegistryObject<Item> GOLD_CHAIN = ITEMS.register("gold_chain",
             () -> new Item(new Item.Properties()));

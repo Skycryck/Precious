@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "precious:raw_mithril"
+    },
+    {
+      "item": "precious:raw_mithril"
+    },
+    {
+      "item": "precious:raw_mithril"
+    },
+    {
+      "item": "precious:raw_mithril"
+    },
+    {
+      "item": "precious:raw_mithril"
+    },
+    {
+      "item": "precious:raw_mithril"
+    },
+    {
+      "item": "precious:raw_mithril"
+    },
+    {
+      "item": "precious:raw_mithril"
+    },
+    {
+      "item": "precious:raw_mithril"
+    }
+  ],
+  "result": {
+    "item": "precious:raw_mithril_block"
+  }
+}

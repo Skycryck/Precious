@@ -9,15 +9,29 @@
   "tooltip.precious.talaria_shoes.tooltip.shift": "Make you jump higher and move faster.",
   "tooltip.precious.talaria_shoes.tooltip": "§6Fast shoes !§r Hold §eSHIFT§r for details.",
 
-
   "item.precious.gold_ring": "Gold Ring",
   "tooltip.precious.gold_ring.tooltip.shift": "Can be enchanted to add up to 1 effect.",
-  "tooltip.precious.gold_ring.tooltip": "A simple ring. §r Hold §eSHIFT§r for details.",
-
+  "tooltip.precious.gold_ring.tooltip": "A simple ring.§r Hold §eSHIFT§r for details.",
 
   "item.precious.mithril_ring": "Mithril Ring",
   "tooltip.precious.mithril_ring.tooltip.shift": "Can be enchanted to add up to 2 effects.",
-  "tooltip.precious.mithril_ring.tooltip": "A simple ring. §r Hold §eSHIFT§r for details.",
+  "tooltip.precious.mithril_ring.tooltip": "A simple ring.§r Hold §eSHIFT§r for details.",
+
+  "item.precious.gold_amulet": "Gold Amulet",
+  "tooltip.precious.gold_amulet.tooltip.shift": "Can be enchanted to add up to 1 effect.",
+  "tooltip.precious.gold_amulet.tooltip": "A simple amulet.§r Hold §eSHIFT§r for details.",
+
+  "item.precious.mithril_amulet": "Mithril Amulet",
+  "tooltip.precious.mithril_amulet.tooltip.shift": "Can be enchanted to add up to 2 effect.",
+  "tooltip.precious.mithril_amulet.tooltip": "A simple amulet.§r Hold §eSHIFT§r for details.",
+
+  "item.precious.tool_belt": "Tool Belt",
+  "tooltip.precious.tool_belt.tooltip.shift": "Add a slot for your bauble.",
+  "tooltip.precious.tool_belt.tooltip": "A cool belt.§r Hold §eSHIFT§r for details.",
+
+  "item.precious.quiver": "Quiver",
+  "tooltip.precious.quiver.tooltip.shift": "Put your arrows in there, can hold 3 stacks.",
+  "tooltip.precious.quiver.tooltip": "A nice quiver.§r Hold §eSHIFT§r for details.",
 
   "item.precious.gold_chain": "Gold Chain",
   "item.precious.mithril_chain": "Mithril Chain",

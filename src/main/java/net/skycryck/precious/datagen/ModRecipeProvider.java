@@ -59,10 +59,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
                 .save(pWriter);
 
+        //GOLD_AMULET
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLD_AMULET.get())
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("CEC")
+                .define('C', ModItems.GOLD_CHAIN.get())
+                .define('E', Tags.Items.GEMS_EMERALD)
+                .unlockedBy("has_gold_chain", has(ModItems.GOLD_CHAIN.get()))
+                .save(pWriter);
+
+        //MITHRIL_AMULET
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MITHRIL_AMULET.get())
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("CEC")
+                .define('C', ModItems.MITHRIL_CHAIN.get())
+                .define('E', Tags.Items.GEMS_EMERALD)
+                .unlockedBy("has_mithril_chain", has(ModItems.MITHRIL_CHAIN.get()))
+                .save(pWriter);
+
         //MITHRIL_NUGGET
-        nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.MITHRIL_NUGGET.get(), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(),
-                "precious:mithril_nugget", "mithril",
-                "precious:mithril_ingot_from_nugget", "mithril");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get())
+                .requires(ModItems.MITHRIL_NUGGET.get(), 9)
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter, "mithril_ingot_from_nugget");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MITHRIL_NUGGET.get(), 9)
+                .requires(ModItems.MITHRIL_INGOT.get())
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter, "mithril_nugget_from_ingot");
 
         //MITHRIL_CHAIN
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MITHRIL_CHAIN.get())
@@ -203,15 +229,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModItems.MITHRIL_INGOT.get()).build()))
                 .save(pWriter);
 
-        //Pre-made recipe 9 ingots (Mithril Ingot) into 1 block (Mithril Block).
-        nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), RecipeCategory.MISC, ModBlocks.MITHRIL_BLOCK.get(),
-                "precious:mithril_ingot", "mithril",
-                "precious:mithril_block", "mithril");
+        //MITHRIL_BLOCK
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MITHRIL_BLOCK.get())
+                .requires(ModItems.MITHRIL_INGOT.get(), 9)
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter, "mithril_block_from_ingot");
 
-        //Pre-made recipe 9 raw (Raw Mithril) into 1 block (Raw Mithril Block).
-        nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.RAW_MITHRIL.get(), RecipeCategory.MISC, ModBlocks.RAW_MITHRIL_BLOCK.get(),
-                "precious:raw_mithril", "mithril",
-                "precious:raw_mithril_block", "mithril");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 9)
+                .requires(ModBlocks.MITHRIL_BLOCK.get())
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter, "mithril_ingot_from_block");
+
+        //RAW_ MITHRIL_BLOCK
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RAW_MITHRIL_BLOCK.get())
+                .requires(ModItems.RAW_MITHRIL.get(), 9)
+                .unlockedBy("has_mithril_raw", has(ModItems.RAW_MITHRIL.get()))
+                .save(pWriter, "raw_mithril_block_from_raw");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_MITHRIL.get(), 9)
+                .requires(ModBlocks.RAW_MITHRIL_BLOCK.get())
+                .unlockedBy("has_mithril_raw", has(ModItems.RAW_MITHRIL.get()))
+                .save(pWriter, "raw_mithril_from_block");
 
         //RAW_MITHRIL_ALLOY
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RAW_MITHRIL_ALLOY.get())

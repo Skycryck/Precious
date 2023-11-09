@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mithril_ingot": {
+    "has_mithril_raw": {
       "conditions": {
         "items": [
           {
             "items": [
-              "precious:mithril_ingot"
+              "precious:raw_mithril"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "precious:mithril_ingot_from_nugget"
+        "recipe": "minecraft:raw_mithril_block_from_raw"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_mithril_ingot",
+      "has_mithril_raw",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "precious:mithril_ingot_from_nugget"
+      "minecraft:raw_mithril_block_from_raw"
     ]
   },
   "sends_telemetry_event": false
