@@ -9,6 +9,16 @@
   "tooltip.precious.talaria_shoes.tooltip.shift": "Make you jump higher and move faster.",
   "tooltip.precious.talaria_shoes.tooltip": "§6Fast shoes !§r Hold §eSHIFT§r for details.",
 
+
+  "item.precious.gold_ring": "Gold Ring",
+  "tooltip.precious.gold_ring.tooltip.shift": "Can be enchanted to add up to 1 effect.",
+  "tooltip.precious.gold_ring.tooltip": "A simple ring. §r Hold §eSHIFT§r for details.",
+
+
+  "item.precious.mithril_ring": "Mithril Ring",
+  "tooltip.precious.mithril_ring.tooltip.shift": "Can be enchanted to add up to 2 effects.",
+  "tooltip.precious.mithril_ring.tooltip": "A simple ring. §r Hold §eSHIFT§r for details.",
+
   "item.precious.gold_chain": "Gold Chain",
   "item.precious.mithril_chain": "Mithril Chain",
   "item.precious.mithril_nugget": "Mithril Nugget",

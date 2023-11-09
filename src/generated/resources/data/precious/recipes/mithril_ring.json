@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "tag": "forge:gems/emerald"
+    },
+    "I": {
+      "item": "precious:mithril_ingot"
+    }
+  },
+  "pattern": [
+    "IIE",
+    "I I",
+    "III"
+  ],
+  "result": {
+    "item": "precious:mithril_ring"
+  },
+  "show_notification": true
+}

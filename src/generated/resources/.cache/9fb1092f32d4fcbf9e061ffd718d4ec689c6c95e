@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-09T10:19:54.0049472	Recipes
+// 1.20.1	2023-11-09T10:48:35.2841836	Recipes
 34456cc7a7210aaf49c385510a84f2fdeb25f948 data/precious/advancements/recipes/building_blocks/mithril_slab.json
 a36ca9eb026656bb72a5a7ba4759b41da92e1188 data/precious/advancements/recipes/building_blocks/mithril_stairs.json
 d888cd3cc115cecb6d49db5da5c094c0bad5c1f4 data/precious/advancements/recipes/combat/mithril_boots.json
@@ -6,6 +6,7 @@ d888cd3cc115cecb6d49db5da5c094c0bad5c1f4 data/precious/advancements/recipes/comb
 d3d2678b18809d455bedb148594399dc311fca76 data/precious/advancements/recipes/combat/mithril_helmet.json
 da1f6312a913828cfeae0192b1ddc1839d8f30c1 data/precious/advancements/recipes/combat/mithril_leggings.json
 98faa75bae88f341405c698f2356e379d4e599b3 data/precious/advancements/recipes/misc/gold_chain.json
+16643e13c38700e2c11c06a75872373c7f099167 data/precious/advancements/recipes/misc/gold_ring.json
 28d98c7f0cd11d58e0fa12af1c2a22a9c6d7723f data/precious/advancements/recipes/misc/mithril_block.json
 7a5b725e720cef5b443af2e6384fb2a847e7012b data/precious/advancements/recipes/misc/mithril_chain.json
 1bbac78b342a1641ecf33eddf9ba1df374b264d7 data/precious/advancements/recipes/misc/mithril_ingot.json
@@ -13,6 +14,7 @@ baec52305cdb1480550c8a5aaf605497b7136357 data/precious/advancements/recipes/misc
 c02d5360785ed5e483ac6358274b9e47cc77e5a1 data/precious/advancements/recipes/misc/mithril_ingot_from_nugget.json
 b873a62c2e5ea1dcbbd3b851d853105d9e63526d data/precious/advancements/recipes/misc/mithril_ingot_from_smelting_raw_mithril_alloy.json
 8e2718dd239dcf35fafa903e2b04ae2ddd801e40 data/precious/advancements/recipes/misc/mithril_nugget.json
+f5f8f79e411b6773ece499abde03b997f9c17769 data/precious/advancements/recipes/misc/mithril_ring.json
 09b071de6b07c7783ae0c2a87d11c04b578574b2 data/precious/advancements/recipes/misc/raw_mithril.json
 2fcd303829a8290d38149e771b738f352ee0324f data/precious/advancements/recipes/misc/raw_mithril_alloy.json
 0bca08dc4ffe2a73256b28ced49199af985d9dbe data/precious/advancements/recipes/misc/raw_mithril_block.json
@@ -24,6 +26,7 @@ a05e6f7fecdc315a2e43fba358aeb7e0da320460 data/precious/advancements/recipes/tool
 ad522572374172a4b87e478d9bad79d29f5258f4 data/precious/advancements/recipes/tools/mithril_shovel.json
 e6cf812eb122c0adb31281138f1f361465f335ee data/precious/advancements/recipes/tools/mithril_sword.json
 2d263425239d43873e050305998d4a00e09d81a6 data/precious/recipes/gold_chain.json
+e5c9e706b456442851905d867fd92469e41b610a data/precious/recipes/gold_ring.json
 4235ed96dd5445706bafa82c1b179b5f79e2e902 data/precious/recipes/mithril_axe.json
 2f08f668631b09ba54b39a6c62c862bc6f2eee10 data/precious/recipes/mithril_block.json
 003f116340ff92c6018b370a709eaabd13a27d81 data/precious/recipes/mithril_boots.json
@@ -39,6 +42,7 @@ a8b37e1774af18b4075ac0e0227a188f3e79ce0c data/precious/recipes/mithril_leggings.
 94e938265ce160ba855b5d9976d76d0fdf6bfb95 data/precious/recipes/mithril_nugget.json
 0b2005d9203077da1b6859ea6e856152ff8ae878 data/precious/recipes/mithril_paxel.json
 018dc1cadf3c60a655c800fa77be0c211ca83e38 data/precious/recipes/mithril_pickaxe.json
+514bafd6946f47f92bc4f598ad86af69629e36cc data/precious/recipes/mithril_ring.json
 a61f9035de2b2602be1d37c1c8d31a1da056dfbf data/precious/recipes/mithril_shovel.json
 ec2731420154dc70baa9927a75673394bb5d6984 data/precious/recipes/mithril_slab.json
 ba6973f46b327e158592654f45acd2bf2a2254ab data/precious/recipes/mithril_stairs.json

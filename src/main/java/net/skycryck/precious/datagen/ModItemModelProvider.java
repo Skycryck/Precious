@@ -23,6 +23,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.THE_ONE);
         simpleItem(ModItems.TALARIA_SHOES);
+        simpleItem(ModItems.GOLD_RING);
+        simpleItem(ModItems.MITHRIL_RING);
 
         simpleItem(ModItems.GOLD_CHAIN);
         simpleItem(ModItems.MITHRIL_CHAIN);

@@ -22,7 +22,7 @@ public class ModTags {
 
     public static class Blocks {
         public static final TagKey<Block> NEEDS_MITHRIL_TOOL = tag("needs_mithril_tool");
-        public static final TagKey<Block> PAXEL_MINABLE = tag("mineable/paxel");
+        public static final TagKey<Block> PAXEL_MINEABLE = tag("mineable/paxel");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(PreciousMod.MOD_ID, name));

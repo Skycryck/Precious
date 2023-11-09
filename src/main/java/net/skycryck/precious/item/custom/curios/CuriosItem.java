@@ -26,11 +26,7 @@ public class CuriosItem extends Item {
     }
 
     public void removeEffect(MobEffect effect) {
-        for(EffectType e : this.EFFECTS_LIST) {
-            if(e.getEffect() == effect) {
-                this.EFFECTS_LIST.remove(e);
-            }
-        }
+        this.EFFECTS_LIST.removeIf(e -> e.getEffect() == effect);
     }
 
     public void addEffectsToPlayer(LivingEntity player) {

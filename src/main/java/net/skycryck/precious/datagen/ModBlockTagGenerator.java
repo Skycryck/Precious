@@ -45,7 +45,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 /*        this.tag(ModTags.Blocks.NEEDS_MITHRIL_TOOL)
                 .add(ModBlocks.EXAMPLE.get());*/
 
-        this.tag(ModTags.Blocks.PAXEL_MINABLE)
+        this.tag(ModTags.Blocks.PAXEL_MINEABLE)
                 .addTags(BlockTags.MINEABLE_WITH_PICKAXE, BlockTags.MINEABLE_WITH_AXE, BlockTags.MINEABLE_WITH_SHOVEL);
     }
 

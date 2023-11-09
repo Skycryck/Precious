@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                     .displayItems((displayParameters, output) -> {
                         output.accept(ModItems.THE_ONE.get());
                         output.accept(ModItems.TALARIA_SHOES.get());
+                        output.accept(ModItems.GOLD_RING.get());
+                        output.accept(ModItems.MITHRIL_RING.get());
                         output.accept(ModBlocks.MITHRIL_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE.get());
                         output.accept(ModItems.RAW_MITHRIL.get());

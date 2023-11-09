@@ -1,6 +1,5 @@
 package net.skycryck.precious.datagen;
 
-import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.block.ModBlocks;
@@ -38,6 +37,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('M', ModItems.MITHRIL_INGOT.get())
                 .unlockedBy("has_mithril", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.MITHRIL_INGOT.get()).build()))
+                .save(pWriter);
+
+        //GOLD_RING
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLD_RING.get())
+                .pattern("IIE")
+                .pattern("I I")
+                .pattern("III")
+                .define('I', Tags.Items.INGOTS_GOLD)
+                .define('E', Tags.Items.GEMS_EMERALD)
+                .unlockedBy("has_gold", has(Tags.Items.INGOTS_GOLD))
+                .save(pWriter);
+
+        //MITHRIL_RING
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MITHRIL_RING.get())
+                .pattern("IIE")
+                .pattern("I I")
+                .pattern("III")
+                .define('I', ModItems.MITHRIL_INGOT.get())
+                .define('E', Tags.Items.GEMS_EMERALD)
+                .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
                 .save(pWriter);
 
         //MITHRIL_NUGGET
