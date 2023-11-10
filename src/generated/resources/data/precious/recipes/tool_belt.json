@@ -2,20 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "E": {
-      "item": "minecraft:emerald"
-    },
     "I": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "item": "minecraft:leather"
     }
   },
   "pattern": [
-    "IIE",
-    "I I",
-    "III"
+    "LLL",
+    "L L",
+    "LIL"
   ],
   "result": {
-    "item": "precious:gold_ring"
+    "item": "precious:tool_belt"
   },
   "show_notification": true
 }

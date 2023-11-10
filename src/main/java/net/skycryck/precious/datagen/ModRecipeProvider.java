@@ -1,5 +1,6 @@
 package net.skycryck.precious.datagen;
 
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.block.ModBlocks;
@@ -29,14 +30,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> pWriter) {
 
-        //Temporary recipe for The One, just to test datagen ;)
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THE_ONE.get())
-                .pattern("MMM")
-                .pattern("M M")
-                .pattern("MMM")
-                .define('M', ModItems.MITHRIL_INGOT.get())
-                .unlockedBy("has_mithril", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(ModItems.MITHRIL_INGOT.get()).build()))
+        //TOOL_BELT
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TOOL_BELT.get())
+                .pattern("LLL")
+                .pattern("L L")
+                .pattern("LIL")
+                .define('L', Items.LEATHER)
+                .define('I', Items.IRON_INGOT)
+                .unlockedBy("has_leather", has(Items.LEATHER))
+                .save(pWriter);
+
+        //QUIVER
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.QUIVER.get())
+                .pattern("LS ")
+                .pattern("LB ")
+                .pattern("LB ")
+                .define('L', Items.LEATHER)
+                .define('B', Items.STICK)
+                .define('S', Items.STRING)
+                .unlockedBy("has_leather", has(Items.LEATHER))
                 .save(pWriter);
 
         //GOLD_RING
@@ -44,9 +56,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("IIE")
                 .pattern("I I")
                 .pattern("III")
-                .define('I', Tags.Items.INGOTS_GOLD)
-                .define('E', Tags.Items.GEMS_EMERALD)
-                .unlockedBy("has_gold", has(Tags.Items.INGOTS_GOLD))
+                .define('I', Items.GOLD_INGOT)
+                .define('E', Items.EMERALD)
+                .unlockedBy("has_gold", has(Items.GOLD_INGOT))
                 .save(pWriter);
 
         //MITHRIL_RING
@@ -55,7 +67,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("I I")
                 .pattern("III")
                 .define('I', ModItems.MITHRIL_INGOT.get())
-                .define('E', Tags.Items.GEMS_EMERALD)
+                .define('E', Items.EMERALD)
                 .unlockedBy("has_mithril", has(ModItems.MITHRIL_INGOT.get()))
                 .save(pWriter);
 
@@ -65,7 +77,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("C C")
                 .pattern("CEC")
                 .define('C', ModItems.GOLD_CHAIN.get())
-                .define('E', Tags.Items.GEMS_EMERALD)
+                .define('E', Items.EMERALD)
                 .unlockedBy("has_gold_chain", has(ModItems.GOLD_CHAIN.get()))
                 .save(pWriter);
 
@@ -75,7 +87,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("C C")
                 .pattern("CEC")
                 .define('C', ModItems.MITHRIL_CHAIN.get())
-                .define('E', Tags.Items.GEMS_EMERALD)
+                .define('E', Items.EMERALD)
                 .unlockedBy("has_mithril_chain", has(ModItems.MITHRIL_CHAIN.get()))
                 .save(pWriter);
 
@@ -102,8 +114,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //GOLD_CHAIN
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLD_CHAIN.get())
-                .define('I', Tags.Items.INGOTS_GOLD)
-                .define('N', Tags.Items.NUGGETS_GOLD)
+                .define('I', Items.GOLD_INGOT)
+                .define('N', Items.GOLD_NUGGET)
                 .pattern(" N ")
                 .pattern(" I ")
                 .pattern(" N ")
@@ -114,7 +126,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_SWORD
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_SWORD.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Tags.Items.RODS_WOODEN)
+                .define('S', Items.STICK)
                 .pattern(" M ")
                 .pattern(" M ")
                 .pattern(" S ")
@@ -124,7 +136,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_PICKAXE
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_PICKAXE.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Tags.Items.RODS_WOODEN)
+                .define('S', Items.STICK)
                 .pattern("MMM")
                 .pattern(" S ")
                 .pattern(" S ")
@@ -134,7 +146,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_AXE
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_AXE.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Tags.Items.RODS_WOODEN)
+                .define('S', Items.STICK)
                 .pattern("MM ")
                 .pattern("MS ")
                 .pattern(" S ")
@@ -144,7 +156,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_SHOVEL
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_SHOVEL.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Tags.Items.RODS_WOODEN)
+                .define('S', Items.STICK)
                 .pattern(" M ")
                 .pattern(" S ")
                 .pattern(" S ")
@@ -154,7 +166,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //MITHRIL_HOE
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MITHRIL_HOE.get())
                 .define('M', ModItems.MITHRIL_INGOT.get())
-                .define('S', Tags.Items.RODS_WOODEN)
+                .define('S', Items.STICK)
                 .pattern("MM ")
                 .pattern(" S ")
                 .pattern(" S ")
@@ -166,7 +178,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('P', ModItems.MITHRIL_PICKAXE.get())
                 .define('A', ModItems.MITHRIL_AXE.get())
                 .define('S', ModItems.MITHRIL_SHOVEL.get())
-                .define('I', Tags.Items.RODS_WOODEN)
+                .define('I', Items.STICK)
                 .pattern("ASP")
                 .pattern(" I ")
                 .pattern(" I ")
@@ -254,8 +266,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //RAW_MITHRIL_ALLOY
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RAW_MITHRIL_ALLOY.get())
                 .define('M', ModItems.RAW_MITHRIL.get())
-                .define('G', Tags.Items.RAW_MATERIALS_GOLD)
-                .define('D', Tags.Items.GEMS_DIAMOND)
+                .define('G', Items.RAW_GOLD)
+                .define('D', Items.DIAMOND)
                 .pattern("DGD")
                 .pattern("GMG")
                 .pattern("GGG")

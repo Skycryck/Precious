@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gold": {
+    "has_leather": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:gold_ingot"
+              "minecraft:leather"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "precious:gold_ring"
+        "recipe": "precious:quiver"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_gold",
+      "has_leather",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "precious:gold_ring"
+      "precious:quiver"
     ]
   },
   "sends_telemetry_event": false

@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "D": {
-      "tag": "forge:gems/diamond"
+      "item": "minecraft:diamond"
     },
     "G": {
-      "tag": "forge:raw_materials/gold"
+      "item": "minecraft:raw_gold"
     },
     "M": {
       "item": "precious:raw_mithril"

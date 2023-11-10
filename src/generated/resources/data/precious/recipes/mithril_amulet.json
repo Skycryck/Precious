@@ -6,7 +6,7 @@
       "item": "precious:mithril_chain"
     },
     "E": {
-      "tag": "forge:gems/emerald"
+      "item": "minecraft:emerald"
     }
   },
   "pattern": [

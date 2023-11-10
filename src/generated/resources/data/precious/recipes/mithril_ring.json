@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "E": {
-      "tag": "forge:gems/emerald"
+      "item": "minecraft:emerald"
     },
     "I": {
       "item": "precious:mithril_ingot"
