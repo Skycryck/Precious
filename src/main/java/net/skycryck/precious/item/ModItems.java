@@ -8,6 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.skycryck.precious.PreciousMod;
 import net.skycryck.precious.item.custom.*;
 import net.skycryck.precious.item.custom.curios.*;
+import net.skycryck.precious.item.custom.curios.quiver.QuiverItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =

@@ -1,7 +1,9 @@
-package net.skycryck.precious.item.custom.curios;
+package net.skycryck.precious.item.custom.curios.quiver;
 
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+
+import net.minecraft.world.item.BundleItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
@@ -11,7 +13,8 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import java.util.List;
 
-public class QuiverItem extends CuriosItem implements ICurioItem {
+public class QuiverItem extends BundleItem implements ICurioItem {
+
     public QuiverItem(Properties pProperties) {
         super(pProperties);
     }
